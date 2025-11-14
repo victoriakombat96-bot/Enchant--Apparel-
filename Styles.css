@@ -1,0 +1,131 @@
+/* Fonts and base styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a;
+  color: #f6e6ea;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #f6e6ea;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.site-header {
+  background-color: #000;
+  padding: 12px 24px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav a {
+  margin-left: 20px;
+  font-weight: 600;
+  color: #f6e6ea;
+}
+
+/* Hero */
+.hero {
+  background-color: #1a1a1a;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}
+
+.btn.primary {
+  background-color: #f6e6ea;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Product Grid */
+.section {
+  padding: 60px 24px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #efd9df;
+  color: #1a1a1a;
+  padding: 16px;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.btn.small {
+  background-color: #1a1a1a;
+  color: #f6e6ea;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* About & Footer */
+.site-footer {
+  background-color: #000;
+  padding: 40px 24px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: #f6e6ea;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    display: none;
+  }
+}
